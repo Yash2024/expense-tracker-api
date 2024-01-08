@@ -22,11 +22,11 @@ app.use(cors());
  app.use('/expenses', expenseRoutes);
  app.use('/users', userRoutes);
 
-//  app.use('/',(req, res, next)=>{
-//     res.status(200).json({
-//         message: 'api running'
-//     })
-//  })
+ app.use('/',(req, res, next)=>{
+    res.status(200).json({
+        message: 'api running'
+    })
+ })
 //  app.use((req, res, next)=>{                         
 //     res.header('Access-Control-Allow-Origin','http://localhost:');
 //     res.header(
